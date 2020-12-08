@@ -1,6 +1,6 @@
 ## 2. Yeni bir plugin oluşturun
 
-Modern web geliştirme için araç geliştirmek zor olabilir. Kendi webpack konfigürasyonunuzu yazabilme imkanınız varken, bu rehber için, hazır bir şablon kullanacağız.
+Kendi plugin konfigürasyonunuzu yazabilme imkanınız varken, bu rehber için, hazır bir şablon kullanacağız.
 
 1. grafana-plugins klasörüne gidin.
 ```

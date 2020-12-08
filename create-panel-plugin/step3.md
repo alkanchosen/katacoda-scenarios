@@ -1,12 +1,12 @@
 ## 3. Pluginin yapısı
 
-Pluginler farklı şekil ve büyüklüklerde gelir. Daha detaylı incelemeden önce hepsi tarafından kullanılan bazı dosyalara bakalım.
+Pluginler farklı şekil ve yapılarda gelir. Daha detaylı incelemeden önce hepsi tarafından kullanılan bazı dosyalara bakalım.
 
-Oluşturduğunuz her plugin en az iki dosyaya ihtiyaç duyacak: `plugin.json` and `module.ts`.
+Oluşturduğunuz her plugin en az iki dosyaya ihtiyaç duyar: `plugin.json` and `module.ts`.
 
 ### src/plugin.json
 
-Grafana çalıştırıldığında plugin klasöründe `plugin.json` dosyası içeren bütün alt klasörleri tarar. `plugin.json` dosyası plugininiz hakkında bilgi içerir ve Grafana'ya plugininizin yapabildiklerini ve gerekli bağımlılıklarını iletir.
+Grafana çalıştırıldığında plugin klasöründe `plugin.json` dosyası içeren bütün alt klasörleri tarar. `plugin.json` dosyası plugininiz hakkında bilgi içerir ve Grafana'ya plugininizin yapabildiklerini, gerekli bağımlılıklarını iletir.
 
 Bazı plugin tipleri farklı konfigürasyon seçeneklerine sahip olsa da zorunlu olanlara bakalım:
 
