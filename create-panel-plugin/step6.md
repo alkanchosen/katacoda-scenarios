@@ -24,7 +24,6 @@ Time | Value
 Hadi bu *data frame*'den nasıl veri çekip görselleştireceğinize bakalım:
 
 1. Her sütundan `number` veri yapısındaki son veriyi alın ve `SimplePanel.tsx` dosyasına `return` kısmından önce aşağıdakini kullanarak ekleyin:
-
 ```typescript
 const radii = data.series
     .map(series => series.fields.find(field => field.type === 'number'))
@@ -34,7 +33,6 @@ const radii = data.series
 `radii` data source'dan gelen serilerden en sondaki verileri içerecek. Bu verileri her çemberin yarıçapını ayarlamak için kullanabilirsiniz.
 
 2. `svg` elementini aşağıdakine göre değiştirin:
-
 ```typescript
       <svg
         className={styles.svg}
@@ -65,5 +63,8 @@ Her `radii` değeri için nasıl `<circle>` elementi oluşturduğumuza dikkat ed
 Oluşan çemberi yatay olarak dağıtmak için `transform`'u kullanıyoruz.
 
 3. Plugininizi yeniden build edin ve dashboard'u yenileyin.
+```
+yarn build
+```{{execute}}
 
 Eğer *data frame*'ler hakkında daha çok bilgi sahibi olmak istiyorsanız [Data frames](https://grafana.com/docs/grafana/latest/developers/plugins/data-frames/) sayfasına gidin.

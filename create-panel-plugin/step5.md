@@ -46,7 +46,7 @@ Grafana çeşitli seçenek kontrollerini destekler: Yazı girişleri, switchler,
 
 Hadi bir radio kontrolü yaratalım ve `color` seçeneğine bağlayalım.
 
-1. Kontrolü `src/module.ts` dosyasında builder'in sonuna ekleyin.
+Kontrolü `src/module.ts` dosyasında builder'in sonuna ekleyin.
 
 ```typescript
     .addRadio({
@@ -100,11 +100,15 @@ Neredeyse bitti. Yeni bir seçenek ve bu seçeneğin değerini değiştirmek iç
 ```
 
 2. Çemberi yeni rengi kullanması için değiştirin.
-
 ```typescript
 <g>
   <circle style={{ fill: color }} r={100} />
 </g>
 ```
+
+3. Plugini tekrardan build edin.
+```
+yarn build
+```{{execute}}
 
 Artık panel editörde Display kısmından Circle color seçeneğindeki rengi değiştirdiğinizde çemberin rengininde değiştiğini göreceksiniz. 
