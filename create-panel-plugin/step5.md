@@ -4,6 +4,8 @@ Bazen plugininizin davranışı düzenlemek için kullanıcılara seçenek verme
 
 Önceki adımda kodunuzda çemberin `fill` rengini değiştirmiştiniz. Şimdi kodu kullanıcıların panel editörü kullanarak bu `fill` rengini değiştirmelerine izin verecek şekilde düzenleyelim.
 
+** Kodları yazarken boşlukları (indendation) unutmayın, yoksa plugin'i build ederken *Linting* aşamasında hata alırsınız.**
+
 ### Bir seçenek ekleyin
 
 Panel seçenekleri bir *panel options objesinde* bulunmaktadır. `SimpleOptions` bu objeyi açıklayan bir arayüzdür.
@@ -66,7 +68,7 @@ Hadi bir radio kontrolü yaratalım ve `color` seçeneğine bağlayalım.
         label: 'Blue',
       },
     ],
-  }
+  },
 });
 ```
 
@@ -105,4 +107,4 @@ switch (options.color) {
 </g>
 ```
 
-Artık panel editörde rengi değiştirdiğinizde çemberin rengininde değiştiğini göreceksiniz. 
+Artık panel editörde Display kısmından Circle color seçeneğindeki rengi değiştirdiğinizde çemberin rengininde değiştiğini göreceksiniz. 

@@ -24,11 +24,11 @@ const { options, data, width, height } = props;
 
 1. Grafana'yı tarayıcınızda açın.
 2. Yeni bir dashboard oluşturun ve yeni bir panel ekleyin.
-3. Görselleştirme tiplerinden sizin panelinizi seçin.
+3. Görselleştirme tiplerinden (Visualization) Grafana Panel Plugin Template'i seçin.
 4. Dashboard'u kaydedin.
 
 Şimdi panelinizi gördüğünüze göre panel plugininde değişiklik yapmayı deneyin:
 
-1. `SimplePanel.tsx` dosyasında çemberin `fill` rengini değiştirin.
-2. Plugini oluşturmak için `yarn dev` komutunu çalıştırın.
-3. Yeni değişikleri görmek için tarayıcınızda Grafana'yı tekrardan çalıştırın.
+1. `SimplePanel.tsx` dosyasında çemberin `fill` rengini değiştirin. `theme.palette.blue95` olan kısmı `theme.palette.dark9` yapın.
+2. Plugini oluşturmak için `yarn build` komutunu çalıştırın.
+3. Yeni değişikleri görmek için tarayıcınızda Grafana'yı tekrardan çalıştırın. Gördüğünüz gibi önceden mavi olan daire artık siyah renkte.

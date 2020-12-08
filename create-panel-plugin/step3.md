@@ -4,7 +4,7 @@ Pluginler farklı şekil ve büyüklüklerde gelir. Daha detaylı incelemeden ö
 
 Oluşturduğunuz her plugin en az iki dosyaya ihtiyaç duyacak: `plugin.json` and `module.ts`.
 
-### plugin.json
+### src/plugin.json
 
 Grafana çalıştırıldığında plugin klasöründe `plugin.json` dosyası içeren bütün alt klasörleri tarar. `plugin.json` dosyası plugininiz hakkında bilgi içerir ve Grafana'ya plugininizin yapabildiklerini ve gerekli bağımlılıklarını iletir.
 
@@ -18,7 +18,7 @@ Bazı plugin tipleri farklı konfigürasyon seçeneklerine sahip olsa da zorunlu
 
 `plugin.json` dosyasındaki bütün konfigürasyon ayarlarına bakmak için [plugin.json şemasına](https://grafana.com/docs/grafana/latest/plugins/developing/plugin.json) bakın.
 
-### module.ts
+### src/module.ts
 
 Grafana plugininizi keşfettikten sonra `module.ts` dosyasını yükler, bu dosya plugininizin giriş noktasıdır. `module.ts` plugininizin yazılımını içerir, bu yazılım oluşturduğunuz plugin tipine göre değişir.
 

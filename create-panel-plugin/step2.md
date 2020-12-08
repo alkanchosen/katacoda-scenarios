@@ -13,6 +13,8 @@ cd grafana-plugins
 git clone https://github.com/grafana/grafana-starter-panel
 ``` {{execute}}
 
+3. grafana-starter-panel klasörüne gidin.
+
 ```
 cd grafana-starter-panel
 ``` {{execute}}
@@ -22,23 +24,18 @@ cd grafana-starter-panel
 yarn install
 ``` {{execute}}
 
-5. Plugini oluşturun.
-```
-yarn dev
-``` {{execute}}
-
 5. Plugini build edin.
 ```
 yarn build
 ``` {{execute}}
 
-7. Grafana'nın yeni plugininizi keşfetmesi için Grafana sunucusunu yeniden başlatın.
+6. Grafana'nın yeni plugininizi keşfetmesi için Grafana sunucusunu yeniden başlatın.
 
 ```
 docker restart grafana
 ``` {{execute}}
 
-8. Grafana'yı açın ve **Configuration -> Plugins** kısmına gidin. Plugininizin `Grafana Panel Plugin Template` ismi ile orada olduğundan emin olun.
+7. Grafana'yı açın ve **Configuration -> Plugins** kısmına gidin. Plugininizin `Grafana Panel Plugin Template` ismi ile orada olduğundan emin olun.
 
 Grafana varsayılan olarak yeni bir plugin keşfettiğinde log dosyasına kayıt alır.
 ```
