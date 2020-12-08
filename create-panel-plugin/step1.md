@@ -1,6 +1,6 @@
 ## 1. Çalışma ortamınızı ayarlayın
 
-Eğer Grafana'yı yerel makinenize kurmadan direkt Docker ile kullanabilirsiniz.
+Eğer Grafana'yı yerel makinenize kurmadan kullanmak istiyorsanız direkt Docker ile kullanabilirsiniz.
 
 Grafana'yı plugin geliştirme için ayarlarken Docker kullanmak istiyorsanız aşağıdaki komutu çalıştırın:
 
