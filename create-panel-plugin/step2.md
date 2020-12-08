@@ -13,25 +13,41 @@ cd grafana-plugins
 git clone https://github.com/grafana/grafana-starter-panel
 ``` {{execute}}
 
-3. Gerekli bağımlılıkları yükleyin.
+```
+cd grafana-starter-panel
+``` {{execute}}
+
+4. Gerekli bağımlılıkları yükleyin.
 ```
 yarn install
 ``` {{execute}}
 
-4. Plugini oluşturun.
+5. Plugini oluşturun.
 ```
 yarn dev
 ``` {{execute}}
 
-5. Grafana'nın yeni plugininizi keşfetmesi için Grafana sunucusunu yeniden başlatın.
+5. Plugini build edin.
+```
+yarn build
+``` {{execute}}
+
+7. Grafana'nın yeni plugininizi keşfetmesi için Grafana sunucusunu yeniden başlatın.
 
 ```
 docker restart grafana
 ``` {{execute}}
 
-6. Grafana'yı açın ve **Configuration -> Plugins** kısmına gidin. Plugininizin `Grafana Panel Plugin Template` ismi ile orada olduğundan emin olun.
+8. Grafana'yı açın ve **Configuration -> Plugins** kısmına gidin. Plugininizin `Grafana Panel Plugin Template` ismi ile orada olduğundan emin olun.
 
 Grafana varsayılan olarak yeni bir plugin keşfettiğinde log dosyasına kayıt alır.
 ```
 INFO[01-01|12:00:00] Registering plugin       logger=plugins name=my-plugin
 ```
+
+Docker ile Grafana log kayıtlarına ulaşmak isterseniz aşağıdaki komutu kullanabilirsiniz. Bu komut ile en son 20 satır yazdırılacaktır, 
+bu sayıyı değiştirerek daha fazla kayıt satırına ulaşabilirsiniz.
+
+```
+docker container logs --tail 20 grafana
+``` {{execute}}
