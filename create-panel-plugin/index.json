@@ -1,5 +1,5 @@
 {
-  "title": "Grafana'da Panel Plugin'i Yaratmak",
+  "title": "Grafana'da Panel Plugin Geliştirme Rehberi",
   "description": "Bu senaryoda Grafana'da kullanmak üzere yeni bir panel plugin yaratacaksınız.",
   "difficulty": "Intermediate",
   "time": "20 minutes",
