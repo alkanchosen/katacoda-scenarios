@@ -38,7 +38,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+	"showdashboard": true,
+	"dashboards": [{"name": "Grafana", "port": 3000}]
   },
   "backend": {
     "imageid": "ubuntu:2004"
