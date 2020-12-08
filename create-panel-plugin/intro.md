@@ -13,4 +13,5 @@ Panellerle alakalı daha fazla bilgi için Grafana'nın [Paneller](https://grafa
 - yarn
 
 Rehberin İngilizce versiyonu [bu sayfada](https://grafana.com/tutorials/build-a-panel-plugin) bulunabilir.
+
 Source: https://grafana.com/tutorials/build-a-panel-plugin
