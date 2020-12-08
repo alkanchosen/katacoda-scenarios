@@ -1,32 +1,32 @@
 {
   "title": "Grafana'da Panel Plugin Geliştirme Rehberi",
   "description": "Bu senaryoda Grafana'da kullanmak üzere yeni bir panel plugin yaratacaksınız.",
-  "difficulty": "Intermediate",
-  "time": "20 minutes",
+  "difficulty": "Orta",
+  "time": "20 dakika",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "1. Adım",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "2. Adım",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "3. Adım",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "4. Adım",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "5. Adım",
         "text": "step5.md"
       },
       {
-        "title": "Step 6",
+        "title": "6. Adım",
         "text": "step6.md"
       }
     ],
