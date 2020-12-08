@@ -1,6 +1,7 @@
 {
   "title": "Grafana için Panel Plugin Geliştirme Rehberi",
   "description": "Bu senaryoda Grafana'da kullanmak üzere yeni bir panel plugin yaratacaksınız.",
+  "icon": "./assets/logo.png",
   "difficulty": "Orta",
   "time": "20 dakika",
   "details": {
