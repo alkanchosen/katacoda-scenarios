@@ -29,7 +29,6 @@ const radii = data.series
     .map(series => series.fields.find(field => field.type === 'number'))
     .map(field => field?.values.get(field.values.length - 1));
 ```
-
 `radii` data source'dan gelen serilerden en sondaki verileri içerecek. Bu verileri her çemberin yarıçapını ayarlamak için kullanabilirsiniz.
 
 2. `svg` elementini aşağıdakine göre değiştirin:
@@ -50,16 +49,13 @@ const radii = data.series
         </g>
       </svg>
 ```
-
 Her `radii` değeri için nasıl `<circle>` elementi oluşturduğumuza dikkat edin:
-
 ```typescript
 {radii.map((radius, index) => {
   const step = width / radii.length;
   return <circle r={radius} transform={`translate(${index * step + step / 2}, 0)`} />;
 })}
 ```
-
 Oluşan çemberi yatay olarak dağıtmak için `transform`'u kullanıyoruz.
 
 3. Plugininizi yeniden build edin ve dashboard'u yenileyin.

@@ -11,12 +11,10 @@ Bazen plugininizin davranışı düzenlemek için kullanıcılara seçenek verme
 Panel seçenekleri bir *panel options objesinde* bulunmaktadır. `SimpleOptions` bu objeyi açıklayan bir arayüzdür.
 
 1. `types.ts` dosyasında kullanıcıların aralarından seçebileceği bir `CircleColor` type'ı ekleyin.
-
 ```typescript
 type CircleColor = 'red' | 'green' | 'blue';
 ```
 2. `SimpleOptions` arayüzünde `color` adında yeni bir seçenek ekleyin.
-
 ```typescript
 color: CircleColor;
 ```
@@ -80,10 +78,9 @@ Grafana sizin için bir seçenek editörü yaratır ve bunu **Display** bölüm�
 
 Neredeyse bitti. Yeni bir seçenek ve bu seçeneğin değerini değiştirmek için gerekli kontrolü eklediniz. Fakat plugin bu seçeneği hala kullanmıyor. Hadi bunu düzeltelim.
 
-1. Seçenek değerini mevcut tema tarafından kullanılan renkler yerine koymak için `SimplePanel.tsx` dosyasına `return` kısmından önce yeni bir `switch` kısmı ekleyin.
-
 **src/SimplePanel.tsx**
 
+1. Seçenek değerini mevcut tema tarafından kullanılan renkler yerine koymak için `SimplePanel.tsx` dosyasına `return` kısmından önce yeni bir `switch` kısmı ekleyin.
 ```typescript
   let color: string;
   switch (options.color) {
