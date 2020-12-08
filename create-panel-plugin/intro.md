@@ -11,3 +11,5 @@ Panellerle alakalı daha fazla bilgi için Grafana'nın [Paneller](https://grafa
 - Grafana 7.0
 - NodeJS 12.x
 - yarn
+
+Rehberin İngilizce versiyonu [bu sayfada](https://grafana.com/tutorials/build-a-panel-plugin) bulunabilir.
