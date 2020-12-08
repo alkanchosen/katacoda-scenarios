@@ -6,34 +6,34 @@ Modern web geliştirme için araç geliştirmek zor olabilir. Kendi webpack konf
 
 ```
 cd grafana-plugins
-``` {{execute}}
+```{{execute}}
 
 2. Şablonu `git clone` komutunu kullanarak oluşturun.
 ```
 git clone https://github.com/grafana/grafana-starter-panel
-``` {{execute}}
+```{{execute}}
 
 3. grafana-starter-panel klasörüne gidin.
 
 ```
 cd grafana-starter-panel
-``` {{execute}}
+```{{execute}}
 
 4. Gerekli bağımlılıkları yükleyin.
 ```
 yarn install
-``` {{execute}}
+```{{execute}}
 
 5. Plugini build edin.
 ```
 yarn build
-``` {{execute}}
+```{{execute}}
 
 6. Grafana'nın yeni plugininizi keşfetmesi için Grafana sunucusunu yeniden başlatın.
 
 ```
 docker restart grafana
-``` {{execute}}
+```{{execute}}
 
 7. Grafana'yı açın ve **Configuration -> Plugins** kısmına gidin. Plugininizin `Grafana Panel Plugin Template` ismi ile orada olduğundan emin olun.
 
@@ -47,4 +47,4 @@ bu sayıyı değiştirerek daha fazla kayıt satırına ulaşabilirsiniz.
 
 ```
 docker container logs --tail 20 grafana
-``` {{execute}}
+```{{execute}}

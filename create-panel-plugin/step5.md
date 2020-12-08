@@ -49,27 +49,27 @@ Hadi bir radio kontrolü yaratalım ve `color` seçeneğine bağlayalım.
 1. Kontrolü `src/module.ts` dosyasında builder'in sonuna ekleyin.
 
 ```typescript
-.addRadio({
-  path: 'color',
-  name: 'Circle color',
-  defaultValue: 'red',
-  settings: {
-    options: [
-      {
-        value: 'red',
-        label: 'Red',
+    .addRadio({
+      path: 'color',
+      name: 'Circle color',
+      defaultValue: 'red',
+      settings: {
+        options: [
+          {
+            value: 'red',
+            label: 'Red',
+          },
+          {
+            value: 'green',
+            label: 'Green',
+          },
+          {
+            value: 'blue',
+            label: 'Blue',
+          },
+        ],
       },
-      {
-        value: 'green',
-        label: 'Green',
-      },
-      {
-        value: 'blue',
-        label: 'Blue',
-      },
-    ],
-  },
-});
+    });
 ```
 
 `path`, kontrolü bir seçeneğe bağlamak içindir. Kontrolü iç içe bir seçeneğe tam konumunu göstererek bağlayabilirsiniz. Örnek: `colors.background` .
@@ -85,18 +85,18 @@ Neredeyse bitti. Yeni bir seçenek ve bu seçeneğin değerini değiştirmek iç
 **src/SimplePanel.tsx**
 
 ```typescript
-let color: string;
-switch (options.color) {
-  case 'red':
-    color = theme.palette.redBase;
-    break;
-  case 'green':
-    color = theme.palette.greenBase;
-    break;
-  case 'blue':
-    color = theme.palette.blue95;
-    break;
-}
+  let color: string;
+  switch (options.color) {
+    case 'red':
+      color = theme.palette.redBase;
+      break;
+    case 'green':
+      color = theme.palette.greenBase;
+      break;
+    case 'blue':
+      color = theme.palette.blue95;
+      break;
+  }
 ```
 
 2. Çemberi yeni rengi kullanması için değiştirin.

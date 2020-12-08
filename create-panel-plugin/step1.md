@@ -6,7 +6,7 @@ Grafana'yı plugin geliştirme için ayarlarken Docker kullanmak istiyorsanız a
 
 ```
 docker run -d -p 3000:3000 -v "$(pwd)"/grafana-plugins:/var/lib/grafana/plugins --name=grafana grafana/grafana:7.0.0
-``` {{execute}}
+```{{execute}}
 
 Grafana'ya giriş yaparken username ve password girmeniz gerekmektedir. Bunlar varsayılan olarak şu şekildedir:
 
@@ -19,7 +19,7 @@ Grafana pluginleri sadece açılışta yüklediği için herhangi bir plugin ekl
 
 ```
 docker restart grafana
-``` {{execute}}
+```{{execute}}
 
 Grafana'yı kullanmak için NodeJS 12 gerekmektedir. Hangi sürümün kurulu olduğunu `node -v`{{execute}} komutu ile öğrenebilirsiniz. Eğer mevcut sürüm 12 değilse
 sürüm düşürmeniz gerekmektedir. Bu işlem için aşağıdaki adımları izleyin:

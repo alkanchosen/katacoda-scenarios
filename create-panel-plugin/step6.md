@@ -27,8 +27,8 @@ Hadi bu *data frame*'den nasıl veri çekip görselleştireceğinize bakalım:
 
 ```typescript
 const radii = data.series
- .map(series => series.fields.find(field => field.type === 'number'))
- .map(field => field?.values.get(field.values.length - 1));
+    .map(series => series.fields.find(field => field.type === 'number'))
+    .map(field => field?.values.get(field.values.length - 1));
 ```
 
 `radii` data source'dan gelen serilerden en sondaki verileri içerecek. Bu verileri her çemberin yarıçapını ayarlamak için kullanabilirsiniz.
@@ -36,21 +36,21 @@ const radii = data.series
 2. `svg` elementini aşağıdakine göre değiştirin:
 
 ```typescript
-<svg
-  className={styles.svg}
-  width={width}
-  height={height}
-  xmlns="http://www.w3.org/2000/svg"
-  xmlnsXlink="http://www.w3.org/1999/xlink"
-  viewBox={`0 -${height / 2} ${width} ${height}`}
->
-  <g fill={color}>
-    {radii.map((radius, index) => {
-      const step = width / radii.length;
-      return <circle r={radius} transform={`translate(${index * step + step / 2}, 0)`} />;
-    })}
-  </g>
-</svg>
+      <svg
+        className={styles.svg}
+        width={width}
+        height={height}
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        viewBox={`0 -${height / 2} ${width} ${height}`}
+      >
+        <g fill={color}>
+          {radii.map((radius, index) => {
+            const step = width / radii.length;
+            return <circle r={radius} transform={`translate(${index * step + step / 2}, 0)`} />;
+          })}
+        </g>
+      </svg>
 ```
 
 Her `radii` değeri için nasıl `<circle>` elementi oluşturduğumuza dikkat edin:
