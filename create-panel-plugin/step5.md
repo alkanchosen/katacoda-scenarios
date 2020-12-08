@@ -14,6 +14,7 @@ Panel seçenekleri bir *panel options objesinde* bulunmaktadır. `SimpleOptions`
 ```typescript
 type CircleColor = 'red' | 'green' | 'blue';
 ```
+
 2. `SimpleOptions` arayüzünde `color` adında yeni bir seçenek ekleyin.
 ```typescript
 color: CircleColor;
