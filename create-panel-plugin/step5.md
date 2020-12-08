@@ -4,7 +4,7 @@ Bazen plugininizin davranışı düzenlemek için kullanıcılara seçenek verme
 
 Önceki adımda kodunuzda çemberin `fill` rengini değiştirmiştiniz. Şimdi kodu kullanıcıların panel editörü kullanarak bu `fill` rengini değiştirmelerine izin verecek şekilde düzenleyelim.
 
-** Kodları yazarken boşlukları (indendation) unutmayın, yoksa plugin'i build ederken *Linting* aşamasında hata alırsınız.**
+** Kodları yazarken boşlukları (indentation) unutmayın, yoksa plugin'i build ederken *Linting* aşamasında hata alırsınız.**
 
 ### Bir seçenek ekleyin
 
